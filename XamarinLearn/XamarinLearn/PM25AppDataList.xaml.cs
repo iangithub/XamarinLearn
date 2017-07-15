@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Connectivity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,15 @@ namespace XamarinLearn
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                //You are offline, notify the user
+                DisplayAlert("Error", "無網路服務", "OK");
+                return;
+            }
+
+
             PM25DataService service = new PM25DataService();
             this.Pm25ItemsList.ItemsSource = await service.GetDataFromOpenDataAsync();
         }

@@ -26,8 +26,11 @@ namespace XamarinLearn.Lib
                 var content = await response.Content.ReadAsStringAsync();
                 content = content.Replace("PM2.5", "PM25");
 
-                Items = JsonConvert.DeserializeObject<List<PM25Data>>(content);
-                //Items = JsonConvert.DeserializeObject<List<PM25Data>>(content).OrderBy(x => x.County).ThenBy(x => x.SiteName).ToList();
+                //Items = JsonConvert.DeserializeObject<List<PM25Data>>(content);
+                Items = JsonConvert.DeserializeObject<List<PM25Data>>(content)
+                    .OrderBy(x => x.County)
+                    .ThenBy(x => x.SiteName)
+                    .ToList();
             }
             return Items;
         }

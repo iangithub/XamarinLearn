@@ -23,7 +23,8 @@ namespace XamarinLearn
             base.OnAppearing();
             PM25DataService service = new PM25DataService();
             var result = await service.GetDataFromOpenDataAsync();
-            this.Pm25ItemsList.ItemsSource = result.FindAll(x => decimal.Parse(x.PM25) >= decimal.Parse("7")).ToList();
+            this.Pm25ItemsList.ItemsSource = result
+                .FindAll(x => decimal.Parse(x.PM25) >= decimal.Parse("7")).ToList();
         }
     }
 }
