@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.NavigationPage1">
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+            <Label Text="資料頁面" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button Text="Go 明細頁面(Modeless)" 
+                    TextColor="Black" 
+                    BorderColor="Black" 
+                    BorderRadius="20" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="Button_OnClicked"></Button>
+            <Button x:Name="ModalPageBtn" Text="Go 明細頁面(ModalPage)" 
+                    TextColor="Black" 
+                    BorderColor="Black" 
+                    BorderRadius="20" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="ModalPageBtn_OnClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

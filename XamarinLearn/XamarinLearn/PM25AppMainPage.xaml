@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.PM25AppMainPage">
+    <ContentPage.Content>
+        <StackLayout 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="CenterAndExpand">
+            <Image x:Name="Pm25" Source="pm25icon.png" 
+                   WidthRequest="80" HeightRequest="80">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Pm25_TapGestureRecognizer_OnTapped"  />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="Pm25Red" Source="pm25redicon.png" 
+                   WidthRequest="80" HeightRequest="80">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Pm25Red_TapGestureRecognizer_OnTapped"  />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.GridDemoComputer">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="100">
+                <Label BackgroundColor="DarkTurquoise" Text="My APP" HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Grid  HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="7" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="0" Grid.Column="0"/>
+                    <Button Text="8" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="0" Grid.Column="1"/>
+                    <Button Text="9" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="0" Grid.Column="2"/>
+                    <Button Text="./." BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="0" Grid.Column="3"/>
+
+                    <Button Text="4" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="1" Grid.Column="0"/>
+                    <Button Text="5" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="1" Grid.Column="1"/>
+                    <Button Text="6" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="1" Grid.Column="2"/>
+                    <Button Text="*" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="1" Grid.Column="3"/>
+
+                    <Button Text="1" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="2" Grid.Column="0"/>
+                    <Button Text="2" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="2" Grid.Column="1"/>
+                    <Button Text="3" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="2" Grid.Column="2"/>
+                    <Button Text="-" BackgroundColor="White" FontSize="30" TextColor="Black"
+			BorderRadius="10"  Grid.Row="2" Grid.Column="3"/>
+
+                    <Button Text="0" BackgroundColor="CornflowerBlue" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="3" Grid.Column="0"/>
+                    <Button Text="." BackgroundColor="CornflowerBlue" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="3" Grid.Column="1"/>
+                    <Button Text="=" BackgroundColor="CornflowerBlue" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="3" Grid.Column="2"/>
+                    <Button Text="+" BackgroundColor="CornflowerBlue" FontSize="30" TextColor="Black"
+			BorderRadius="10" Grid.Row="3" Grid.Column="3"/>
+
+                </Grid>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="100">
+                <Label BackgroundColor="Black" TextColor="White" Text="Ver 0.9" HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

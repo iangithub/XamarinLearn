@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.CallPhoneDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HeightRequest="200">
+                <Label Text="Phone Number is : " FontSize="18" FontAttributes="Bold" 
+                       WidthRequest="80" VerticalOptions="Center"/>
+                <Entry x:Name="PhoneNum" WidthRequest="200" VerticalOptions="Center"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="phoneicon.png" HeightRequest="60" WidthRequest="60">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"  />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

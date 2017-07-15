@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.PM25AppDataItem">
+    <ContentPage.Content>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text = "{Binding County}" Grid.Row="0" Grid.Column="0"/>
+            <Label Text = "{Binding SiteName}" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="細懸浮微粒 PM2.5：" Grid.Row="1" Grid.Column="0"></Label>
+            <Label Text = "{Binding PM25}" TextColor="Blue" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="空氣污染指標：" Grid.Row="2" Grid.Column="0"></Label>
+            <Label Text = "{Binding PSI}" TextColor="Blue" Grid.Row="2" Grid.Column="1"/>
+
+            <Label Text="二氧化氮：" Grid.Row="3" Grid.Column="0"></Label>
+            <Label Text = "{Binding NO2}" TextColor="Blue" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Text="狀態：" Grid.Row="4" Grid.Column="0"></Label>
+            <Label Text = "{Binding Status}" TextColor="Blue" Grid.Row="4" Grid.Column="1"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

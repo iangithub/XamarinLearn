@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.PM25AppDataList">
+    <ContentPage.Content>
+        <ListView x:Name="Pm25ItemsList" ItemSelected="Pm25ItemsList_OnItemSelected">
+            <ListView.ItemTemplate Padding="50,50,10,5">
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                            <Label Text = "{Binding County}" />
+                            <Label Text = "{Binding SiteName}"/>
+                            <Label Text = "{Binding PM25}" TextColor="Blue" />
+                            <Label Text = "{Binding Status}" TextColor="Blue" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

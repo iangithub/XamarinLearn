@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.NavigationPage2">
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+            <Image Source="icon.png" HorizontalOptions="Center"></Image>
+            <Label Text="Xamarin" HorizontalOptions="Center"></Label>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tel" WidthRequest="200" HorizontalOptions="Start"></Label>
+                <Label Text="12345678" HorizontalOptions="End"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email" WidthRequest="200" HorizontalOptions="Start"></Label>
+                <Label Text="xam@app.hello" HorizontalOptions="End"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Title" WidthRequest="200" HorizontalOptions="Start"></Label>
+                <Label Text="Xamarin Hello App" HorizontalOptions="End"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

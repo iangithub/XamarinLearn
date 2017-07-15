@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.ControlLevelRes">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="ContentHeadingStyle" TargetType="Label">
+                        <Setter Property="TextColor" Value="White"/>
+                        <Setter Property="BackgroundColor" Value="CornflowerBlue"/>
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="FontSize" Value="26"/>
+                    </Style>
+                    <Style x:Key="ContentNormalStyle" TargetType="Label">
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="FontSize" Value="30"/>
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+
+            <Label Text="Xamarin 跨平台行動應用開發" 
+                   Style="{StaticResource ContentHeadingStyle}" ></Label>
+            <Label Text="Xamarin是一個行動App開發平台，提供跨平台開發能力，讓熟悉C#的開發人員更可以直接採用 Xamarin 技術開發跨 iOS、Android以及Windows 等平台的原生(Native) App 應用程式" 
+                   Style="{StaticResource ContentNormalStyle}" ></Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

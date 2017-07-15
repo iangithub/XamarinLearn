@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearn.ApplicationLevelRes">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="{StaticResource AppTitle}" 
+                   BackgroundColor="{StaticResource PageTitle}"></Label>
+            <Label Text="Xamarin是一個行動App開發平台，提供跨平台開發能力，讓熟悉C#的開發人員更可以直接採用 Xamarin 技術開發跨 iOS、Android以及Windows 等平台的原生(Native) App 應用程式" 
+                   Style="{StaticResource PageContentStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
